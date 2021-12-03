@@ -1,0 +1,85 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+:root{
+    /* primary colors */
+    --primary-color-dark-blue:  hsl(233, 47%, 7%);
+    --primary-desaturated-dark-blue:  hsl(244, 38%, 16%);
+    --primary-soft-violet:  hsl(277, 64%, 61%);
+    /* neutral colors */
+
+    --white : hsl(0, 0%, 100%);
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+    --silently-transparent-white : hsla(0, 0%, 100%, 0.6);
+}
+
+
+body{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+  background-color: var(--primary-color-dark-blue);
+}
+/* Utilty */
+
+h1{
+    color:var(--transparent-white);
+    font-family: inter;
+  }
+  span{
+      color:var(--primary-soft-violet);
+  }
+  img{
+      width:100%;
+      border-radius: 10px;
+      height: 100%;;
+    }
+  p{
+      color:var(--silently-transparent-white);
+  }
+  /* content */
+.container{
+    margin: 5px;
+    
+    background-color: var();
+}
+
+.card{
+    background-color:var(--primary-desaturated-dark-blue);
+    text-align: center;
+    border-radius: 10px;
+}
+.main-content{
+    font-size:18px;
+    color:var(--transparent-white);
+    font-family: inter;
+}
+.content{
+    padding:1rem;
+
+}
+.data{
+    font-size:21px;
+    font-weight:600;
+    color:white;
+    margin-bottom:0;}
+.title{
+  font-family: lexend+deca;
+    text-transform: uppercase;
+    color:var(--silently-transparent-white);
+}
+
+    
+/* media queries */
+@media screen and (min-width: 900px){
+    .card{
+        display:flex;
+    }
+    .img{
+        order:0;
+    }
+    .content{
+        order:-1;
+    }
+}
+    
